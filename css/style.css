@@ -170,7 +170,7 @@ nav {
   color: var(--primary);
 }
 
-.hero-image img {
+.hero-image {
   padding: 60px 0 40px;
 }
 
@@ -202,6 +202,88 @@ nav {
   background-color: var(--pure);
   color: var(--primary);
   border: 1px solid var(--primary);
+}
+
+.btn-primary {
+  background-color: var(--secondary);
+  color: var(--pure);
+}
+
+.btn-primary:hover {
+  background-color: var(--pure);
+  color: var(--secondary);
+  border: 1px solid var(--secondary);
+}
+
+.featured-product {
+  padding: 70px 0;
+  background: var(--light);
+}
+
+.section-heading {
+  text-align: center;
+  margin-bottom: 50px;
+  font-family: "Raleway-Bold";
+  font-size: 1.125rem;
+  color: var(--secondary);
+  letter-spacing: 1px;
+  position: relative;
+}
+
+.section-heading::after {
+  content: "";
+  position: absolute;
+  background: url(../icons/hr.svg) no-repeat center;
+  width: 100%;
+  height: 30px;
+  bottom: -40px;
+  display: block;
+}
+
+.slider {
+  padding: 40px 0;
+}
+
+.product-card {
+  position: relative;
+  margin: 0 1rem;
+  background: #fff;
+  box-shadow: 0 1px 4px 1px var(--secondary);
+  width: 280px;
+}
+
+.product-card .product-img img {
+  width: 100%;
+  height: 220px;
+  object-fit: contain;
+}
+
+.card-body {
+  padding: 1rem;
+  background: #f7f7f7;
+}
+
+.card-body h4 {
+  font-size: 1.25rem;
+  line-height: 2rem;
+}
+
+.card-body .price {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: red;
+  z-index: 100;
+  padding: 10px;
+  color: #fff;
+}
+
+.slick-slide {
+  margin: 0 27px;
+}
+
+.slick-list {
+  margin: 0 -27px;
 }
 
 /* Media Query for responsive  */
